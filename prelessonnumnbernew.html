@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pre Lesson - Number 1 - 10</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+<style>
+body{ background: linear-gradient(45deg, white, #D1E4C4, white);  height: 91vh;}
+.buttons{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-weight:bold;
+  font-size:50px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:180px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  
+}
+.buttons:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons:active{
+opacity: 0.7;
+}
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:70px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: visible;}
+
+
+.dropdown{ display: flex;}
+ .dropdown button{
+  background-color: #D1E4C4; color: black; padding: 10px 30px;
+  border:none; cursor:pointer; box-shadow: 5px 5px 7px black;
+  transition:0.05s; border-radius:4px;
+ }
+
+ .dropdown a{
+  display: flex; text-decoration: none; text-align: center; padding: 10px 23px; margin-top:10px; background-color: #D1E4C4;
+  color:black; box-shadow: 5px 5px 7px black; border-radius:4px; margin-left:5px;
+ }
+
+ .dropdown .content{
+   position: absolute; min-width:100px;
+  display:none;
+ }
+
+ .dropdown:hover .content{ 
+  display:flex;
+ }
+ .dropdown:hover button{
+  background-color: #F1F7ED; color:black;
+ }
+ .dropdown a:hover{
+  background-color: #F1F7ED; color:black;
+ }
+
+
+
+.p{text-align: center; font-size: 33px;}
+.p1 {font-size: 30px;}
+
+.div1 {display: grid; grid-template-columns: 900px; justify-content: center;}
+.div2 {font-size: 30px;}
+.div3  {display:grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+.div4 {text-align: left; font-size: 30px; padding-left: 45px;}
+.div5 {display: grid; grid-template-columns: 900px; justify-content: center;}
+.div6 {display: grid; grid-template-columns: 1fr 1fr;}
+.div7 {text-align: center; font-size: 40px;}
+.div8 {display: grid; grid-template-columns: 1fr 1fr 1fr;}
+
+
+
+@media screen and (max-width: 1000px){
+.p{text-align: center; font-size: 25px;}
+.p1 {font-size: 25px;}
+
+.div1 {display: grid; grid-template-columns:  1fr; font-size: 25px;}
+.div2 {font-size: 23px;}
+.div3  {display:grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+.div4 {text-align: left; font-size: 23px;}
+.div5 {display: grid; grid-template-columns: 1fr;}
+.div6 {display: grid; grid-template-columns: 1fr;}
+.div7 {text-align: center; font-size: 30px;}
+.div8 {display: grid; grid-template-columns: 1fr ;}
+.wrapper { overflow-x: hidden; width: 100%; background: linear-gradient(45deg, white, #D1E4C4, white);}
+
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:50px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: hidden;}
+
+
+.buttons{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-weight:bold;
+  font-size:28px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:80px;
+  height: 60px;  
+  border-width: 2px;
+  margin-bottom: 25px;
+  margin-left: 15px;
+  
+}
+
+
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+</style>
+<body>
+<div class="wrapper">
+
+ <h1 class="tooltips"> Numbers <span class="tooltipstext">Following is the English Numbers script with pronunciation</span></h1>
+
+<button onmousedown="sound1.play()" class="buttons"> 1 </button>
+
+<button onmousedown="sound2.play()" class="buttons"> 2 </button>
+
+<button onmousedown="sound3.play()" class="buttons"> 3 </button>
+
+<button onmousedown="sound4.play()" class="buttons"> 4 </button>
+
+<button onmousedown="sound5.play()" class="buttons"> 5 </button>
+
+<button onmousedown="sound6.play()" class="buttons"> 6 </button>
+
+<button onmousedown="sound7.play()" class="buttons"> 7 </button>
+
+<button onmousedown="sound8.play()" class="buttons"> 8 </button>
+
+<button onmousedown="sound9.play()" class="buttons"> 9 </button>
+
+<button onmousedown="sound10.play()" class="buttons"> 10 </button>
+
+
+
+<div class="div1" style="">
+<div class="div2" style=" ">
+
+<div style="text-align: center;"><b></b></div><br>
+<div  class="div3" style=""> 
+
+<div style="text-align: center; border: 1px solid grey;">
+1<br>
+One</div>
+<div style="text-align: center; border: 1px solid grey;">
+2<br>
+Two</div>
+<div style="text-align: center; border: 1px solid grey;">
+3<br>
+Three</div>
+<div style="text-align: center; border: 1px solid grey;">
+4<br>
+Four</div>
+<div style="text-align: center; border: 1px solid grey;">
+5<br>
+Five</div> 
+
+<div style="text-align: center; border: 1px solid grey;">
+6<br>
+Six</div>
+<div style="text-align: center; border: 1px solid grey;">
+7<br>
+Seven</div>
+<div style="text-align: center; border: 1px solid grey;">
+8<br>
+Eight</div>
+<div style="text-align: center; border: 1px solid grey;">
+9<br>
+Nine</div>
+<div style="text-align: center; border: 1px solid grey;">
+10<br>
+Ten</div>
+</div> 
+
+</div>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+  var sound1 = new Audio();
+  sound1.src = "1.mp3";
+
+  var sound2 = new Audio();
+  sound2.src = "2.mp3";
+
+  var sound3 = new Audio();
+  sound3.src = "3.mp3";
+
+  var sound4 = new Audio();
+  sound4.src = "4.mp3";
+
+  var sound5 = new Audio();
+  sound5.src = "5.mp3";
+
+  var sound6 = new Audio();
+  sound6.src = "6.mp3";
+
+  var sound7 = new Audio();
+  sound7.src = "7.mp3";
+
+  var sound8 = new Audio();
+  sound8.src = "8.mp3";
+
+  var sound9 = new Audio();
+  sound9.src = "9.mp3";
+
+  var sound10 = new Audio();
+  sound10.src = "10.mp3";
+
+  var sound11 = new Audio();
+  sound11.src = "K.mp3";
+
+  var sound12 = new Audio();
+  sound12.src = "L.mp3";
+
+  var sound13 = new Audio();
+  sound13.src = "M.mp3";
+
+   var sound14 = new Audio();
+  sound14.src = "N.mp3";
+
+  var sound15 = new Audio();
+  sound15.src = "O.mp3";
+
+  var sound16 = new Audio();
+  sound16.src = "P.mp3";
+
+  var sound17 = new Audio();
+  sound17.src = "Q.mp3";
+
+  var sound18 = new Audio();
+  sound18.src = "R.mp3";
+
+  var sound19 = new Audio();
+  sound19.src = "S.mp3";
+
+  var sound20 = new Audio();
+  sound20.src = "T.mp3";
+
+  var sound21 = new Audio();
+  sound21.src = "U.mp3";
+
+  var sound22 = new Audio();
+  sound22.src = "V.mp3";
+
+  var sound23 = new Audio();
+  sound23.src = "W.mp3";
+
+   var sound24 = new Audio();
+  sound24.src = "X.mp3";
+
+  var sound25 = new Audio();
+  sound25.src = "Y.mp3";
+
+  var sound26 = new Audio();
+  sound26.src = "Z.mp3";
+
+  var sound27 = new Audio();
+  sound27.src = "haaa.mp3";
+
+  var sound28 = new Audio();
+  sound28.src = "hamza.mp3";
+
+  var sound29 = new Audio();
+  sound29.src = "yaa.mp3";
+
+  var sound30 = new Audio();
+  sound30.src = "taamarbota.mp3";
+</script>
+
+</body>
+</html>
